@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/akhan-msft/spring-apps-config
+          default-label: main
+          username: akhan-msft
+          password: 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

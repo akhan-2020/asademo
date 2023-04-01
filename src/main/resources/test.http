@@ -1,0 +1,4 @@
+POST https://devzone-asademo.azuremicroservices.io/actuator/refresh HTTP/1.1
+content-type: application/json
+
+{}
