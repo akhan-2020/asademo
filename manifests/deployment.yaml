@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: akdemok8ds
+  labels:
+    app: akdemok8ds
+  namespace: aktest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: akdemok8ds
+  template:
+    metadata:
+      labels:
+        app: akdemok8ds
+    spec:
+      containers:
+        - name: akdemok8ds
+          image: acrworkflow1685842773796.azurecr.io/image-workflow-1685842773796:latest
+          ports:
+            - containerPort: 8080
